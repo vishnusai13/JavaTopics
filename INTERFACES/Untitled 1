@@ -1,0 +1,43 @@
+              *************************INTERFACES***************************************
+              
+              
+        1) An interafce in java is used to achieve 
+        -> abstraction
+        -> loose copuling 
+        -> multiple interafce implemenation 
+        	so that the code can be flexaible ;
+        	
+        	
+       2)unlike abstraction classes it doesnt contain concreate methods
+       
+       
+       
+       
+       3) Differnce between abstract class and interfaces(MAIN Differnce)
+                                                         
+                                                         
+                          Abstract class                               Inteface class
+                         ->Can create an object                        -> cannot creare an  Object                                                          
+                         -> can have  Constructor                      -> cannot have a Constructor
+         		 		->Abstract and concreate                       -> Can have abstract methods, and also default/static methods with a body        
+        -
+        
+        
+        4) STRINGS  are inmuttable ***
+        
+        
+        5)STRING BUFFER AND STIRNG BUILDER 
+        
+        --------> These are mutable where as strings are inmutabble 
+        ---------> It is called as thread 
+        
+       			STRING BUFFER : 5.1)It is completely thread-safe. Multiple threads can access and modify it at the same time without causing any data corruption.	
+       							5.2)Every major method is synchronized. This means Java automatically locks the object when a thread uses it, forcing other threads to wait their turn.			
+       							5.3)It is slower in execution speed. The system overhead required to manage, acquire, and release thread locks slows down its processing time.	
+       							5.4) This is a legacy class. It has been a part of the core Java framework since the original Java 1.0 release.
+       							5.5) Use this only if you are working on legacy code or if a single mutable string must be actively modified by multiple threads at once.						           
+       		   STRING BUILDER : A.1)It is not thread-safe. It is unsafe to use when multiple threads are accessing and modifying it simultaneously.
+       		   					A.2) Methods are not synchronized. There are no object locks applied during execution, allowing open access.
+       		   					A.3)It is much faster and more efficient. Because it completely skips the lock management system, it executes string operations instantly.
+       		   					A.4)This is a modern alternative. It was introduced later in Java 1.5 to provide a high-performance choice for single-threaded tasks.
+       		   					A.5)Use this by default for 99% of your standard Java programs, loops, local variables, and coding logic where speed is vital.					
