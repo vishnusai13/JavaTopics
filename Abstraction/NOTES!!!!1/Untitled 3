@@ -1,0 +1,181 @@
+																					# ABSTRACTION IN JAVA
+
+1.) 		DEFINITION OF ABSTRACTION
+
+			---
+
+			------>	Abstraction in Java is the process of hiding internal implementation details and showing only the essential functionality to the user.
+					It focuses on WHAT an object does rather than HOW it does it.
+
+
+
+
+2.)			 ABSTRACT KEYWORD
+
+---
+
+			Java provides the "abstract" keyword to achieve abstraction.
+
+					The abstract keyword can be used with:
+
+								1. Abstract Class
+												2. Abstract Method
+
+		## 2.1) ABSTRACT METHOD
+
+										An abstract method is a method that provides only the method declaration without implementation.
+
+
+					Example:
+
+							abstract void exam(int minInternals, String syllabus,
+ 
+ 
+ 							int range, String duration);
+
+				Important:
+
+							An abstract method does NOT have a method body.
+
+					Example:
+
+								abstract void exam();
+
+							There is no { } after the method declaration.
+
+				## 2.2) EXAMPLE
+
+					abstract class JNTUK
+					{
+						abstract void exam(int minInternals, String syllabus,
+								int range, String duration);
+																}
+
+				Here:
+
+						abstract  -> keyword
+						void      -> return type
+						exam      -> method name
+						(...)     -> parameters
+
+						The abstract method only tells WHAT needs to be done.
+						It does not tell HOW it should be done.
+
+				## 2.3) CHILD CLASS
+
+						class GIET extends JNTUK
+						{
+							void exam(int minInternals, String syllabus,
+								int range, String duration)
+							{
+								int externalMarks = 50;
+								int total = minInternals + externalMarks;
+
+
+    							System.out.println("Total Marks = " + total);
+									}
+```
+
+									}
+
+				Here GIET provides the implementation of the abstract exam() method.
+
+
+													FLOW:
+
+																JNTUK
+																	|
+																	| abstract exam()
+																	|
+																	v
+																GIET
+																	|
+	                                                				| exam() implementation
+																	v
+																	Implementation
+
+
+
+						## 3.2) ONLY CONCRETE METHODS: 
+
+														A concrete method is a normal method that has a body.
+														
+														abstract class JNTUK
+														{
+														void attendance()
+														{
+														System.out.println("Attendance is required");
+														}
+														
+														```
+														void timetable()
+														{
+														    System.out.println("Exam timetable");
+														}
+														```
+														
+														}
+													
+			## 3.3) BOTH ABSTRACT AND CONCRETE METHODS:-
+													
+													abstract class JNTUK
+													{
+													abstract void exam();
+													
+													```
+													void attendance()
+													{
+													    System.out.println("Attendance is required");
+													}
+													```
+													
+													}
+													
+													Here:
+													
+													exam()       -> Abstract method
+													attendance() -> Concrete method
+
+		4. IMPORTANT POINTS TO REMEMBER:--
+											
+											---
+											
+											1. Abstraction means hiding implementation details.
+											
+											2. It shows only essential functionality to the user.
+											
+											3. Abstraction focuses on WHAT, not HOW.
+											
+											4. Java uses the abstract keyword for abstraction.
+											
+											5. An abstract method has no implementation/body.
+											
+											6. The child class provides the implementation of
+											   the abstract method.
+											
+											7. An abstract class can contain:
+											   a) Only abstract methods
+											   b) Only concrete methods
+											   c) Both abstract and concrete methods
+											
+											8. An abstract class can have variables.
+											
+											9. An abstract class can have constructors.
+											
+											10. We cannot directly create an object of an abstract class.
+											
+											11. A concrete child class must implement all abstract methods.
+
+				5) EASY WAY TO REMEMBER:-
+
+												ABSTRACTION = WHAT TO DO, NOT HOW TO DO IT.
+												
+												Example:
+												
+												abstract void exam();
+												
+										WHAT?
+												-> Exam method must be available.
+												
+										HOW?
+												-> The child class decides how the exam method works.
