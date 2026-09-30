@@ -1,4 +1,4 @@
-package com.version1;
+package datatypes;
 
 public class Dt {
 	static int x = 67 ; // instance 
