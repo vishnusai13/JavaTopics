@@ -1,0 +1,27 @@
+1) 
+------>  
+
+//HERE we can use private because private keeps in not going code into inheritance  and only used in encapsulation
+
+2)
+
+-------> Refer directly to the immediate parent class object. It is primarily used within the context of inheritance to resolve ambiguity and reuse code ---- 
+
+3)-->
+*****************************************************("" FINAL =  Here $final is used to privant the inheritance  "")*****************************************************
+ 
+3.1) ------------ > In Java, the final keyword is a non-access modifier used to restrict modifications and enforce stability, security, and predictability in your code.
+					3.2) using final we can make a proper / behaviour unchangeable
+												|
+												|	
+												↓
+												final can be used in  3 ways
+												1)final variable  :cannot be  updated
+												2)final method  : cannot be  overridden;
+												3)final class :  cannot be inherited
+												
+												
+4)													
+---->
+ !!!!!!! ->    exceptions cannot be used in java only in  code like trying it or failure it is used ad exceptions is a seperate concept in java . 
+ 
